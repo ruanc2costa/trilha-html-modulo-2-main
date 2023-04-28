@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        table{
+            align-items: center;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            border: solid 1px;
+        }
+        table tbody td{
+            border: solid 1px;
+            text-align: center;
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: lightgray;
+
+        }
+        table tbody tr:hover{
+            background-color: darkgray;
+        }
+
+        img{
+            float: left;
+            margin-left: 5px;
+            width: 100px;
+            border-radius: 50%;
+            border: solid 1px black;
+        }
+        
+        h1{
+            margin-left: 150px;
+            margin-top: 35px;
+            color:white;
+        }
+        .header p {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+        .footerp{
+            display: flex;
+            justify-content: left;
+            margin-top: -10px;
+            align-content: center;
+            font-size: 20px;
+        }
+
+        .divIframe {
+            width: 100%;
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            margin-top: -35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="template.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="horario.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="estet.jpeg">
+                <h1>Clínica Pediatrica </h1>
+                <p>Nosso consultório pediátrico tem como objetivo deixar nossas crianças sempre saudáveis<br>
+                    pois as crianças são o nosso futuro
+                </p>
+            </div>
+    
+            <div class="content">
+                <p>Entre em Contato Conosco para tirar qualquer dúvida!</p>
+                <p>Endereço: 20040-002 Av. Rio Branco, 128-144 - Centro Rio de Janeiro - RJ</p>
+                <p>Telefone: (11) 00000-0000</p>
+                <form method="post">
+                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+                    <input type="text" name="text" placeholder="Assunto">
+                    <input type="textarea" name="msg" value="Mensagem">   
+                    <input type="submit" name="enviar" value="Enviar">   
+                </form>
+            </div>
+
+            
+    
+            <div class="footer">
+                <div class ="footerp">
+                    <p>Endereço do nosso consultório</p>
+                </div>
+                <div class="divIframe">
+                    <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14700.982661565067!2d-43.178348449999994!3d-22.90430795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5eadd9f865%3A0x17012d8286368108!2sAv.%20Rio%20Branco%2C%20128-144%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020040-002!5e0!3m2!1spt-BR!2sbr!4v1682709644215!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading ="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
